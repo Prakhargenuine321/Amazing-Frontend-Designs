@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --roboto-condensed:'Roboto Condensed', 'sans-serif';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--roboto-condensed);
+}
+
+html , body {
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    background-color:white;
+}
+
+nav{
+    height: 100px;
+    width: 100%;
+    /* background: rgb(217, 114, 114); */
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0 30px;
+}
+
+.nav-part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-part2{
+    display: flex;
+}
+
+.video-cam{
+    border: none;
+    font-size: 24px;
+    background-color: black;
+    color: white;
+}
+
+nav h3 , nav i{
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 4px 10px;
+}
+
+nav h1{
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+nav button{
+    font-family: var(--roboto-condensed);
+    font-weight: 500 ;
+    padding: 7px 12px;
+    border: 1px solid black;
+    border-radius: 50px;
+    background-color: #fff;
+}
+
+.orange-btn{
+    background-color:tomato;
+    color: white;
+    border: none;
+}
+
+/* below shows direct children of .main is h1 */
+.main > h1{
+    font-size:131px;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 100%;
+    text-align: center;
+}
+
+img{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    border-radius: 20px;
+
+}
+
+.img-1{
+    /* hum yahan par dubara poori property likhenge because rotate transform ki property hai usae dobara likhne par woh paehli property ko overwrite kar degi */
+    transform: translate(-50% , -50%) rotate(-20deg);
+}
+
+.img-2{
+    transform: translate(-50% , -50%) rotate(-15deg);
+}
+
+.img-3{
+    transform: translate(-50% , -50%) rotate(-10deg);
+}
+
+.settings{
+    display: flex;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.settings > i{
+    border: none;
+    background-color: white;
+    border-radius: 14px;
+    padding: 6px;
+}
+
+.settings > h4{
+    border: none;
+    background-color: white;
+    border-radius: 15px;
+    padding: 6px;
+    font-weight: 500;
+}
+
+.lower{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    top: 77%;
+}
+
+.side-lower{
+    padding: 0 0 1rem 2rem;
+    font-weight: 400;
+}
+
+.icons-lower{
+    padding:  0 2rem 2rem 0;
+}
+
+.icons-lower > h4{
+    font-weight: 400;
+}
+
+.circle{
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    font-size:30px;
+    border: 1px solid rgb(90, 89, 89);
+    padding: 0 2rem 4rem 2rem;
+    border-radius: 80px;
+    color:rgb(90, 89, 89) ;
+}
+/* A)my learning from this project 
+    1)Learnt that to use CSS Variables is a better way.
+    2)For icon use --> https://remixicon.com/ .
+    3)object-fit: ;-->is used when "<img>" is used.
+    4)background-size: ;-->is used when background is set using image.
+*/
