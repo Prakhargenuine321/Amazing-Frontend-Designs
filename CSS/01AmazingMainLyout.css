@@ -159,6 +159,10 @@ img{
     font-weight: 400;
 }
 
+.icon{
+    font-size: 25px;
+}
+
 .circle{
     position: absolute;
     top: 97%;
@@ -170,6 +174,13 @@ img{
     border-radius: 80px;
     color:rgb(90, 89, 89) ;
 }
+
+.circle:hover{
+    border: none;
+    background-color: rgb(90, 89, 89) ;
+    color: white;
+}
+
 /* A)my learning from this project 
     1)Learnt that to use CSS Variables is a better way.
     2)For icon use --> https://remixicon.com/ .
